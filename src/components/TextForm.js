@@ -6,8 +6,9 @@ import React, {useState} from 'react'
 export default function TextForm(props) {
 
     const handleUpClick = ()=> {
-             console.log("Upper case was clicked");
-             setText("You have clicked on handleUpClick")
+             console.log("Upper case was clicked" + text);
+             let newText = text.toUpperCase();
+             setText(newText)
     }
 
     const handleOnChange = (event)=> {
@@ -29,3 +30,4 @@ export default function TextForm(props) {
     </div>
   )
 }
+ 
